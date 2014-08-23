@@ -10,7 +10,6 @@ function beforeTest() {
 test('load SimplexNoise.', function(t) {
   SimplexNoise = require('../src/quietriot');
   t.ok(SimplexNoise, 'object loaded');
-  console.log(SimplexNoise);
   t.end();
 });
 

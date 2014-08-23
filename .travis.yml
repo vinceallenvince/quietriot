@@ -29,5 +29,5 @@ deploy:
     all_branches: true
 env:
   global:
-  - GH_REF: github.com/vinceallenvince/colorpalette.git
+  - GH_REF: github.com/vinceallenvince/quietriot.git
   - secure: RTAG1qwbe1fNr0ObwGv9Auf/qL7gYpqEQSKYF3S5y2kGj5Vsxht7k4eTMNV+o6EQ2xehaeW+yO8GHy8Q7pPsJUCzFxUPB3KC0WRrr9P8aylbee80KG90lM76t0Pf6mwLjFT5NjaOqGgv4+B4zZMlIZxpfxSIYsKmiMjsPbby6ug=

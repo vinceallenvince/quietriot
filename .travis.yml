@@ -10,3 +10,24 @@ before_deploy: echo 'ready?'
 after_deploy:
 - echo 'done!'
 - ./deploy-gh-pages.sh
+deploy:
+- provider: npm
+  email: vince@vinceallen.com
+  api_key:
+    secure: I29JcYkNPDTFahjMvHX6qUv5j6xwYcJNzI6vqmetj0egI/EXgPJZJUIFUZULduvrndAeYlhUI1ctn9YwIh0Bgl4gc3T6pyYnAVD1moo95StfBs15yLJ+SrKSLEeJS11T5qKTxahQddAqhRbjtXt6eeV1ct7ZyhQRRTB4axYh5QI=
+  on:
+    tags: true
+    repo: vinceallenvince/quietriot
+    all_branches: true
+- provider: releases
+  api_key:
+    secure: FTwXK9ajnFCYX61zxcK70xQ2W3oi66U2shgC37iDyTvz3WnKVjcdkkjgcoABvj4gScCqq0jxa3RR1s/19LEjycHG1Q/ISfmg41TcRc2SFhYsamE8l7S//vi3W6nzkcHHmmaDTapbRJYo12YVm8a+2Hz/gxcIme+yzleiMFOGQCk=
+  file: release/quietriot.min.js
+  on:
+    tags: true
+    repo: vinceallenvince/quietriot
+    all_branches: true
+env:
+  global:
+  - GH_REF: github.com/vinceallenvince/colorpalette.git
+  - secure: RTAG1qwbe1fNr0ObwGv9Auf/qL7gYpqEQSKYF3S5y2kGj5Vsxht7k4eTMNV+o6EQ2xehaeW+yO8GHy8Q7pPsJUCzFxUPB3KC0WRrr9P8aylbee80KG90lM76t0Pf6mwLjFT5NjaOqGgv4+B4zZMlIZxpfxSIYsKmiMjsPbby6ug=

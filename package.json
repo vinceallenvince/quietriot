@@ -1,6 +1,6 @@
 {
   "name": "quietriot",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Sean McCullough's JS port of Stefan Gustavson's Java Perlin noise generator.",
   "keywords": "utilities",
   "main": "./src/quietriot.js",
